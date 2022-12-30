@@ -1,15 +1,27 @@
 GET http://localhost:5000/api/posts
 
 ###
-DELETE http://localhost:5000/api/posts/63ae53821145fe4ab3b19010
+DELETE http://localhost:5000/api/posts/63aee7d39efa3d866381a16e
 
 ###
 POST http://localhost:5000/api/posts
 Content-Type: application/json
 
 {
-    "user" : "Mouri",
-    "post": "ASA University Bangladesh",
+    "user" : "Safat",
+    "post": "Universal University Bangladesh",
     "photoUrl": "NA",
-    "like": 37
+    "likes": 121
+}
+
+###
+
+PUT http://localhost:5000/api/posts/63aeec3ccee749311a8bc4ae
+Content-Type: application/json
+
+{
+    "user" : "Safat",
+    "post": "Universal University Bangladesh",
+    "photoUrl": "NA",
+    "likes": 12
 }

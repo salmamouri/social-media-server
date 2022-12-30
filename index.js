@@ -109,7 +109,7 @@ app.post("/api/posts", (req, res) => {
     user: body.user,
     post: body.post,
     photoUrl: body.photoUrl,
-    like: body.like,
+    likes: body.likes,
   });
   newPost.save().then((savedNote) => {
     res.json(savedNote);
@@ -123,7 +123,7 @@ app.put("/api/posts/:id", (req, res, next) => {
     user: body.user,
     post: body.post,
     photoUrl: body.photoUrl,
-    like: body.like,
+    likes: body.likes,
   }
 
   Post.findByIdAndUpdate(req.params.id, post, {new: true} ).then(updatedPost => {
